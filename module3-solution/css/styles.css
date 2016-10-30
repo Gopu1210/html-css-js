@@ -9,8 +9,8 @@ h3 {
 .tall-section {
 	margin: 0;
 }
-
-.navbar-collapse {
+#collapsable-nav {
+	background-color: lightgray;
 }
 .pirate {
 	background-color: grey;
