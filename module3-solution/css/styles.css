@@ -19,4 +19,8 @@ h3 {
 	#collapsable-nav {
 		background-color: lightgray;
 	}
+
+  .navbar-nav li {
+  	text-align: center;
+  }
 }
