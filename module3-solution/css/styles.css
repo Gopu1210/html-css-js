@@ -5,15 +5,18 @@ h1 {
 h3 {
 	text-transform: uppercase;
 }
-
 .tall-section {
 	margin: 0;
-}
-#collapsable-nav {
-	background-color: lightgray;
 }
 .pirate {
 	background-color: grey;
 	margin-bottom: 4vh;
 	padding: 4vh;
+}
+
+
+@media (max-width: 767px) {
+	#collapsable-nav {
+		background-color: lightgray;
+	}
 }
