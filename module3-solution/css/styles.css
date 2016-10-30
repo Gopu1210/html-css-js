@@ -1,0 +1,19 @@
+h1 {
+	text-transform: capitalize;
+	margin-bottom: 6vh;
+}
+h3 {
+	text-transform: uppercase;
+}
+
+.tall-section {
+	margin: 0;
+}
+
+.navbar-collapse {
+}
+.pirate {
+	background-color: grey;
+	margin-bottom: 4vh;
+	padding: 4vh;
+}

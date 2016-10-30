@@ -17,8 +17,107 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
 <body>
+<!-- 9. Navbar - Mobile View: Create a simple menu button (3 horizontal bars). When the user clicks that button, a dropdown menu should appear (as illustrated in Mobile Open Menu illustration below.) The dropdown menu should contain 3 items: Chicken, Beef, and Sushi.
 
-  <h1>Hello Coursera!</h1>
+The dropdown menu should take up the entire width of the browser window. Make sure the dropdown menu has a background color set that distinguishes it from the rest of the content.
+
+(Hint: See http://getbootstrap.com/components/#navbar and Lecture 31 for examples on how to accomplish this.) -->
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Arrrgh, LLC</a>
+    </div>
+
+    <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#redbeard">
+                <span class="glyphicon glyphicon-fire"></span><br class="hidden-xs">  Redbeard</a>
+            </li>
+            <li>
+              <a href="#bluebeard">
+                <span class="glyphicon glyphicon-flash"></span><br class="hidden-xs"> Bluebeard</a>
+            </li>
+            <li>
+              <a href="#blackbeard">
+                <span class="glyphicon glyphicon-hourglass"></span><br class="hidden-xs"> Blackbeard</a>
+            </li>
+
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+      <ul class="nav navbar-nav navbar-right visible-xs">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="main-content" class="container-fluid">
+
+  <h1 class="text-center" id="page-title">our menu</h1>
+
+  <section class="row col-xs-12 tall-section">
+    <div class="col-lg-4 col-md-6 col-sm-12" id="redbeard">
+      <div class="pirate">
+        <h3 class="text-center">redbeard</h3>
+        <p>Bilge water topsail execution dock skysail broadside Blimey crow's nest run a shot across the bow sutler come about. Sheet execution dock keelhaul mizzenmast squiffy case shot quarterdeck barkadeer pinnace holystone. American Main fathom measured fer yer chains Davy Jones' Locker lass crow's nest Yellow Jack tackle mutiny gabion.</p>
+        <p>Boatswain hempen halter hardtack ahoy log main sheet Arr mizzen mutiny gangplank. Man-of-war galleon yardarm pressgang transom scuttle weigh anchor reef sails carouser jib. Tack hulk dance the hempen jig walk the plank scuppers run a shot across the bow poop deck line Gold Road six pounders.</p>
+        <p>Run a shot across the bow reef sails Privateer rum scurvy topsail gangplank prow come about gibbet. Sea Legs line brig topsail cutlass aye grog crack Jennys tea cup yawl fore. Black spot brigantine lookout Pirate Round Chain Shot squiffy grog blossom ballast transom long boat.</p>
+        <p>Bilge water topsail execution dock skysail broadside Blimey crow's nest run a shot across the bow sutler come about. Sheet execution dock keelhaul mizzenmast squiffy case shot quarterdeck barkadeer pinnace holystone. American Main fathom measured fer yer chains Davy Jones' Locker lass crow's nest Yellow Jack tackle mutiny gabion.</p>
+        <p>Boatswain hempen halter hardtack ahoy log main sheet Arr mizzen mutiny gangplank. Man-of-war galleon yardarm pressgang transom scuttle weigh anchor reef sails carouser jib. Tack hulk dance the hempen jig walk the plank scuppers run a shot across the bow poop deck line Gold Road six pounders.</p>
+        <p>Run a shot across the bow reef sails Privateer rum scurvy topsail gangplank prow come about gibbet. Sea Legs line brig topsail cutlass aye grog crack Jennys tea cup yawl fore. Black spot brigantine lookout Pirate Round Chain Shot squiffy grog blossom ballast transom long boat.</p>
+        <a href="#page-title">back to top</a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12" id="bluebeard">
+      <div class="pirate">
+        <h3 class="text-center">Bluebeard</h3>
+        <p>Bilge water topsail execution dock skysail broadside Blimey crow's nest run a shot across the bow sutler come about. Sheet execution dock keelhaul mizzenmast squiffy case shot quarterdeck barkadeer pinnace holystone. American Main fathom measured fer yer chains Davy Jones' Locker lass crow's nest Yellow Jack tackle mutiny gabion.</p>
+        <p>Boatswain hempen halter hardtack ahoy log main sheet Arr mizzen mutiny gangplank. Man-of-war galleon yardarm pressgang transom scuttle weigh anchor reef sails carouser jib. Tack hulk dance the hempen jig walk the plank scuppers run a shot across the bow poop deck line Gold Road six pounders.</p>
+        <p>Run a shot across the bow reef sails Privateer rum scurvy topsail gangplank prow come about gibbet. Sea Legs line brig topsail cutlass aye grog crack Jennys tea cup yawl fore. Black spot brigantine lookout Pirate Round Chain Shot squiffy grog blossom ballast transom long boat.</p>
+        <p>Bilge water topsail execution dock skysail broadside Blimey crow's nest run a shot across the bow sutler come about. Sheet execution dock keelhaul mizzenmast squiffy case shot quarterdeck barkadeer pinnace holystone. American Main fathom measured fer yer chains Davy Jones' Locker lass crow's nest Yellow Jack tackle mutiny gabion.</p>
+        <p>Boatswain hempen halter hardtack ahoy log main sheet Arr mizzen mutiny gangplank. Man-of-war galleon yardarm pressgang transom scuttle weigh anchor reef sails carouser jib. Tack hulk dance the hempen jig walk the plank scuppers run a shot across the bow poop deck line Gold Road six pounders.</p>
+        <p>Run a shot across the bow reef sails Privateer rum scurvy topsail gangplank prow come about gibbet. Sea Legs line brig topsail cutlass aye grog crack Jennys tea cup yawl fore. Black spot brigantine lookout Pirate Round Chain Shot squiffy grog blossom ballast transom long boat.</p>
+        <a href="#page-title">back to top</a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12" id="blackbeard">
+      <div class="pirate">
+        <h3 class="text-center">BlackbearD</h3>
+        <p>Bilge water topsail execution dock skysail broadside Blimey crow's nest run a shot across the bow sutler come about. Sheet execution dock keelhaul mizzenmast squiffy case shot quarterdeck barkadeer pinnace holystone. American Main fathom measured fer yer chains Davy Jones' Locker lass crow's nest Yellow Jack tackle mutiny gabion.</p>
+        <p>Boatswain hempen halter hardtack ahoy log main sheet Arr mizzen mutiny gangplank. Man-of-war galleon yardarm pressgang transom scuttle weigh anchor reef sails carouser jib. Tack hulk dance the hempen jig walk the plank scuppers run a shot across the bow poop deck line Gold Road six pounders.</p>
+        <p>Run a shot across the bow reef sails Privateer rum scurvy topsail gangplank prow come about gibbet. Sea Legs line brig topsail cutlass aye grog crack Jennys tea cup yawl fore. Black spot brigantine lookout Pirate Round Chain Shot squiffy grog blossom ballast transom long boat.</p>
+        <p>Bilge water topsail execution dock skysail broadside Blimey crow's nest run a shot across the bow sutler come about. Sheet execution dock keelhaul mizzenmast squiffy case shot quarterdeck barkadeer pinnace holystone. American Main fathom measured fer yer chains Davy Jones' Locker lass crow's nest Yellow Jack tackle mutiny gabion.</p>
+        <p>Boatswain hempen halter hardtack ahoy log main sheet Arr mizzen mutiny gangplank. Man-of-war galleon yardarm pressgang transom scuttle weigh anchor reef sails carouser jib. Tack hulk dance the hempen jig walk the plank scuppers run a shot across the bow poop deck line Gold Road six pounders.</p>
+        <p>Run a shot across the bow reef sails Privateer rum scurvy topsail gangplank prow come about gibbet. Sea Legs line brig topsail cutlass aye grog crack Jennys tea cup yawl fore. Black spot brigantine lookout Pirate Round Chain Shot squiffy grog blossom ballast transom long boat.</p>
+        <a href="#page-title">back to top</a>
+      </div>
+    </div>
+
+  </section>
+</div>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
